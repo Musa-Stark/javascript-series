@@ -1,0 +1,425 @@
+==========================================
+JAVASCRIPT SESSION 5
+APIs + Error Handling + setTimeOut & setInterval + GitHub
+==========================================
+
+==========================================
+WHAT IS AN API? - Application Programming Interface
+==========================================
+
+client (mobile) ---- req ----> server ----> data ----> mobile
+
+Imagine you are sitting in a restaurant.
+
+You don't go inside the kitchen.
+
+You tell the waiter what you want.
+
+The waiter goes to the kitchen.
+
+Brings your food.
+
+Restaurant
+
+Customer (mobile/laptop)
+↓
+
+Waiter (API)
+↓
+
+Kitchen (server)
+↓
+
+Fridge (data center)
+↓
+
+Waiter (API)
+↓
+
+Customer (mobile/laptop)
+
+Website works exactly the same.
+
+Browser ----> https://youtube.com
+↓
+
+API
+↓
+
+Server
+↓
+
+Database
+↓
+
+Server
+↓
+
+API
+↓
+
+Browser
+
+The API is just a messenger.
+
+It takes requests.
+
+Returns responses.
+
+==========================================
+WHAT IS JSON? ----> Java Script Object Notation
+==========================================
+
+Most APIs send data in JSON.
+
+Example
+
+{
+    name: "musa"
+}
+
+{
+    "name":"Ali",
+    "age":20,
+    "city":"Peshawar"
+}
+
+Explain
+
+JSON looks almost like JavaScript Objects.
+
+Difference
+
+JSON keys are always inside quotes.
+
+HTTPS ----> Hyper text transfer protocol Secured
+HTML ----> Hyper text markup langauge
+
+mobile ----> API(JSON) (MMA) ----> server
+
+HTTPS -> TCP
+Websocket secured connection (wss) -> TCP
+WebRTC -> UDP
+
+TCP && UDP
+Data transfer in chunks
+TCP -> [1] [2] [3] [4]
+UDP -> 
+
+Browser ----------HTTPS------------> Server (request)
+Browser <---------HTTPS------------- Server (response)
+==========================================
+HTTP METHODS
+==========================================
+GET
+
+Read data
+
+POST
+
+Create data
+
+PUT
+
+Update data
+
+DELETE
+
+Delete data
+
+==========================================
+FETCHING DATA
+==========================================
+
+async function getUsers(){
+
+    const response = await fetch("API_URL");
+
+    const data = await response.json();
+
+    console.log(data);
+
+}
+
+getUsers();
+
+Explain every line.
+
+async
+
+This function can wait.
+
+await fetch()
+
+Wait until server responds.
+
+response.json()
+
+Convert JSON into JavaScript Object.
+
+data
+
+Actual information.
+
+==========================================
+FREE APIs
+==========================================
+
+Use
+
+https://jsonplaceholder.typicode.com/users
+
+https://jsonplaceholder.typicode.com/posts
+
+https://dummyjson.com/users
+
+https://dummyjson.com/products
+
+https://dog.ceo/api/breeds/image/random
+
+https://api.adviceslip.com/advice
+
+==========================================
+EXERCISE 1
+Random Dog Image
+==========================================
+
+Button
+
+↓
+
+Fetch API
+
+↓
+
+Display Image
+
+==========================================
+EXERCISE 2
+Random Advice Generator
+==========================================
+
+Button
+
+↓
+
+API
+
+↓
+
+Display Advice
+
+==========================================
+EXERCISE 3
+Users List
+==========================================
+
+Fetch Users
+
+↓
+
+Display
+
+Name
+
+Email
+
+Phone
+
+==========================================
+EXERCISE 4
+Products
+==========================================
+
+Display
+
+Image
+
+Title
+
+Price
+
+==========================================
+EXERCISE 5
+Posts
+==========================================
+
+Display
+
+Title
+
+Body
+
+==========================================
+BEST PRACTICE
+==========================================
+
+Always use
+
+try{
+
+}
+
+catch(error){
+
+}
+
+Explain simply
+
+If internet fails...
+
+Show error.
+
+Don't go into deep explanation.
+
+==========================================
+PART 2
+GITHUB
+==========================================
+
+What is Git?
+
+Version Control System.
+
+Tracks changes.
+
+==========================================
+
+What is GitHub?
+
+Website to store Git repositories. repo
+
+Like Google Drive
+
+But for code.
+
+==========================================
+
+Create GitHub Account
+
+Create New Repository
+
+Repository Name
+
+Public
+
+README
+
+Create Repository
+
+==========================================
+
+Install Git
+
+git --version
+
+==========================================
+
+Configure Git
+
+git config --global user.name "Your Name"
+
+git config --global user.email "you@example.com"
+
+==========================================
+
+Inside Project Folder
+
+git init
+
+==========================================
+
+Check Status
+
+git status
+
+==========================================
+
+Stage Files
+
+git add .
+
+==========================================
+
+Commit
+
+git commit -m "Initial Commit"
+
+Explain
+
+Commit = Save Point
+
+==========================================
+
+Connect GitHub
+
+git remote add origin REPOSITORY_URL
+
+==========================================
+
+Push
+
+git branch -m main
+
+git push -u origin main
+
+==========================================
+
+Next Time
+
+git add .
+
+git commit -m "Updated project"
+
+git push
+
+==========================================
+HOMEWORK
+==========================================
+
+Choose Any Two
+
+1.
+
+Random Dog Image Generator
+
+----------------------------
+
+2.
+
+Random Advice Generator
+
+----------------------------
+
+3.
+
+Display Users from DummyJSON
+
+----------------------------
+
+4.
+
+Display Products
+
+----------------------------
+
+5.
+
+Push Every Previous Project to GitHub
+
+==========================================
+END GOAL
+==========================================
+
+Students should now be able to
+
+✓ Fetch API data
+
+✓ Display it on a webpage
+
+✓ Understand JSON
+
+✓ Push projects to GitHub
+
+✓ Continue learning Node.js next
+==========================================
