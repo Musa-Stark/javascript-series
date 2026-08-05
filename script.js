@@ -40,8 +40,8 @@ btn.addEventListener("click", async () => {
 //   console.log("hello world")
 // }, 1000)
 
-const hello = () => {
-  console.log("hello world")
-}
+// const hello = () => {
+//   console.log("hello world")
+// }
 
 // hello()
